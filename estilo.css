@@ -15,7 +15,7 @@ body {
 
 .header_pegadas {
     width: 100%;
-    height: 60px;
+    height: 3.75em;
     background-image: url(_img/pegadas.png);
     background-size: contain;
     margin-top: 20px;
@@ -23,10 +23,10 @@ body {
 }
 
 .header .header_logo {
-    width: 200px;
-    height: 200px;
-    margin: 0 20px;
-    margin-top: 30px;
+    max-width: 12.5em;
+    max-height: 12.5em;
+    margin: 0 1.25em;
+    margin-top: 1.875em;
     flex-wrap: wrap;
 }
 
@@ -50,14 +50,14 @@ main {}
 }
 
 .main_nos_encontre {
-    max-width: 390px;
+    max-width: calc(23.125em + 3.75em);
     margin: 0 auto;
 }
 
 .main_nos_encontre article {
     background-color: #45CACF;
     flex-basis: 100%;
-    margin: 0 20px;
+    margin: 0 60px;
     margin-bottom: 20px;
     border-radius: 15px 15px 0 15px;
     -moz-border-radius: 15px 15px 0 15px;
@@ -100,23 +100,118 @@ footer p {
 }
 
 /*ABSOLUTE*/
-.sapato-1 {
-    position: absolute;
-    bottom: -200px;
+img {
+
+}
+
+#sapato-1 {
+    position: relative;
+    top: 100px;
+    bottom: 0;
     left: 25%;
+    right: 0;
     width: 150px;
     transform: rotate(-25deg);
 }
 
-img {}
-
 #sapato-2 {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 55%;
+    right: 0;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1) rotate(10deg);
-    position: absolute;
-    bottom: -50px;
-    right: 25%;
     width: 150px;
+}
+
+/* 1200px */
+@media (max-width: 75em){
+    .sapato-1 {
+        left: 20%;
+    }
+
+    img {}
+    #sapato-2 {
+        right: 20%;
+    }
+}
+
+/* 1024px */
+@media (max-width: 64em){
+
+    .header_logo {
+        max-width: 10em !important;
+    }
+
+    .header_pegadas {
+        height: 3em;
+    }
+
+    .sapato-1 {
+        left: 16%;
+    }
+
+    img {}
+    #sapato-2 {
+        right: 16%;
+    }
+}
+
+/* 920px */
+@media (max-width: 57.5em){
+
+    .sapato-1 {
+        left: 1%;
+    }
+
+    img {}
+    #sapato-2 {
+        right: 1%;
+    }
+}
+
+/* 768 */
+@media (max-width: 48em){
+
+    .header_logo {
+        max-width: 9em !important;
+    }
+
+    .header_pegadas {
+        height: 2.5em;
+    }
+
+    .main_nos_encontre article h2 {
+        font-size: 1.5em;
+    }
+
+    footer {
+        font-size: 0.7em;
+    }
+
+        .sapato-1 {
+        top: 600px;
+        position: fixed;
+    }
+
+    img {}
+    #sapato-2 {
+        bottom: -150px;
+    }
+}
+
+/* 600 */
+@media (max-width: 37.5em){
+
+}
+
+/* 375 */
+@media (max-width: 24em){
+    .header_logo {
+        max-width: 7em !important;
+    }
+
 }
