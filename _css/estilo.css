@@ -13,20 +13,10 @@ body {
     flex-wrap: wrap;
 }
 
-.header_pegadas {
-    width: 100%;
-    height: 3.75em;
-    background-image: url(_img/pegadas.png);
-    background-size: contain;
-    margin-top: 20px;
-    margin-bottom: 40px;
-}
-
 .header .header_logo {
     max-width: 12.5em;
     max-height: 12.5em;
-    margin: 0 1.25em;
-    margin-top: 1.875em;
+    margin: 1.875em 1.25em;
     flex-wrap: wrap;
 }
 
@@ -83,8 +73,6 @@ main {}
     font-weight: 200;
     color: black;
 }
-
-.main_nos_encontre article h2:hover {}
 
 /*FOOTER*/
 footer p {
