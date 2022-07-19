@@ -47,7 +47,7 @@ main {}
 .main_nos_encontre article {
     background-color: #45CACF;
     flex-basis: 100%;
-    margin: 0 60px;
+    margin: 0 50px;
     margin-bottom: 20px;
     border-radius: 15px 15px 0 15px;
     -moz-border-radius: 15px 15px 0 15px;
@@ -88,48 +88,36 @@ footer p {
 }
 
 /*ABSOLUTE*/
-img {
-
+.sapatos {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
 }
 
+img {}
+
 #sapato-1 {
-    position: relative;
-    top: 100px;
-    bottom: 0;
-    left: 25%;
-    right: 0;
-    width: 150px;
+    width: 9em;
     transform: rotate(-25deg);
 }
 
 #sapato-2 {
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 55%;
-    right: 0;
+    width: 9em;
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
     -webkit-transform: scaleX(-1);
     transform: scaleX(-1) rotate(10deg);
-    width: 150px;
 }
 
 /* 1200px */
-@media (max-width: 75em){
-    .sapato-1 {
-        left: 20%;
-    }
+@media (max-width: 75em) {
 
-    img {}
-    #sapato-2 {
-        right: 20%;
-    }
 }
 
 /* 1024px */
-@media (max-width: 64em){
-
+@media (max-width: 64em) {
     .header_logo {
         max-width: 10em !important;
     }
@@ -137,33 +125,15 @@ img {
     .header_pegadas {
         height: 3em;
     }
-
-    .sapato-1 {
-        left: 16%;
-    }
-
-    img {}
-    #sapato-2 {
-        right: 16%;
-    }
 }
 
 /* 920px */
-@media (max-width: 57.5em){
+@media (max-width: 57.5em) {
 
-    .sapato-1 {
-        left: 1%;
-    }
-
-    img {}
-    #sapato-2 {
-        right: 1%;
-    }
 }
 
 /* 768 */
-@media (max-width: 48em){
-
+@media (max-width: 48em) {
     .header_logo {
         max-width: 9em !important;
     }
@@ -179,27 +149,41 @@ img {
     footer {
         font-size: 0.7em;
     }
-
-        .sapato-1 {
-        top: 600px;
-        position: fixed;
-    }
-
-    img {}
-    #sapato-2 {
-        bottom: -150px;
-    }
 }
 
 /* 600 */
-@media (max-width: 37.5em){
+@media (max-width: 37.5em) {
+    img {}
 
+    #sapato-1 {
+        position: fixed;
+        width: 9em;
+        left: -20px;
+        top: 450px;
+        transform: rotate(-25deg);
+    }
+
+    #sapato-2 {
+        position: fixed;
+        width: 9em;
+        right: -20px;
+        -moz-transform: scaleX(-1);
+        -o-transform: scaleX(-1);
+        -webkit-transform: scaleX(-1);
+        transform: scaleX(-1) rotate(10deg);
+    }
 }
 
-/* 375 */
-@media (max-width: 24em){
+/* 414 */
+@media (max-width: 26em) {
     .header_logo {
         max-width: 7em !important;
     }
+}
 
+/* 320 */
+@media (max-width: 20em) {
+    .main_nos_encontre article h2 {
+        font-size: 1.3em;
+    }
 }
